@@ -7,6 +7,17 @@
   font-family: "Inter", sans-serif;
 }
 
+body{
+  background-color: #FFF7ED;
+  min-height: 100svh;
+}
+
+.site-wrapper{
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
 /* NAVBAR */
 
 header{
@@ -138,7 +149,7 @@ footer{
   align-items: center;
   background-color: #252525;
   height: 10svh;
-
+  margin-top: auto;
 }
 
 footer p{
@@ -324,4 +335,47 @@ footer p{
   font-weight: 700;
   color: #161616;
   text-decoration: underline;
+}
+
+/* HOST VANS SECTION */
+
+.hostVans-container{
+  padding: 2rem;
+}
+
+.hostVans-container h2{
+ font-size: 2rem;
+ font-weight: 700;
+ margin-bottom: 2rem;
+}
+
+.hostVans-cardContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hostVans-card{
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 6px;
+}
+
+.hostVans-card img{
+  width: 66px;
+  height: 66px;
+  border-radius: 5px;
+}
+
+.hostVans-card p{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.hostVans-card span{
+  color: #4D4D4D;
+  font-weight: 500;
 }
