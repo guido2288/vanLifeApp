@@ -9,7 +9,7 @@
 
 /* NAVBAR */
 
-nav{
+header{
   background: #FFF7ED;
   padding: 2rem;
   display: flex;
@@ -37,6 +37,13 @@ nav{
 
 .links-container a:hover{
   color: #161616;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.links-container .active{
+  color: #161616;
+  font-weight: 700;
   text-decoration: underline;
 }
 
@@ -131,9 +138,190 @@ footer{
   align-items: center;
   background-color: #252525;
   height: 10svh;
+
 }
 
 footer p{
   font-size: 14px;
   color: #AAAAAA;
+}
+
+/* VANS CONTAINER */
+.vans-container{
+  padding: 3rem 1rem;
+}
+
+.vans-container h3{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.filters-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.filters-container button{
+  border: none;
+  border-radius: 5px;
+  background-color: #FFEAD0;
+  color: #4D4D4D;
+  padding: 0.5rem 1.4rem;
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.filters-container :last-child{
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.cards-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 34px;
+}
+
+.card{
+  max-width: 230px;
+  cursor: pointer;
+}
+
+.card img{
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.card button{
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 16px;
+  
+}
+
+.luxury{
+  background-color: #161616;
+}
+
+.rugged{
+  background-color: #115E59;
+}
+
+.simple{
+  background-color: #E17654;
+}
+
+.card-text{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  color: #161616;
+  font-weight: 600;
+  margin: 0.4rem 0;
+  text-decoration: none;
+}
+
+
+
+.card-text span{
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* VAN DETAILS */
+.van-detail-container{
+  padding: 3rem 1rem;
+}
+
+.van-detail-container p{
+  text-decoration: underline;
+  color: #201F1D;
+  font-weight: 500;
+}
+
+.van-detail-container svg{
+  margin-right: 0.6rem;
+}
+
+.van-card{
+  display: flex;
+  flex-direction: column;
+  color: #161616;
+}
+
+.detail button{
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.van-card img{
+  margin: 2rem 0;
+}
+
+.rent-btn{
+  border: none;
+  background-color: #FF8C38;
+  color: #fff;
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+}
+
+.detail h2{
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.detail p{
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.detail span{
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.detail .text-detail{
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 1rem 0;
+  line-height: 24px;
+}
+
+.dashboard-links{
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #FFF7ED;
+}
+
+.dashboard-links a{
+  text-decoration: none;
+  font-weight:500;
+  color: #4D4D4D;
+}
+
+.dashboard-links a:hover{
+  font-weight: 700;
+  color: #161616;
+  text-decoration: underline;
 }
