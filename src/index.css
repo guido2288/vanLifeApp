@@ -462,3 +462,33 @@ footer p{
   color: #161616;
   text-decoration: underline;
 }
+
+.hostVanInfo ul{
+  list-style: none;
+}
+
+.hostVanInfo ul li{
+  margin: 0.7rem 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #161616;
+}
+
+.hostVanPricing p{
+  text-decoration: none;
+  cursor: default;
+  font-size: 1.5rem;
+  color: #161616;
+  font-weight: 500;
+}
+
+.hostVanPricing p span{
+  color: #4D4D4D;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hostVanPhotos img{
+  width: 103px;
+  border-radius: 5px;
+}

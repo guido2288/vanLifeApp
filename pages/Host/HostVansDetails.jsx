@@ -1,4 +1,4 @@
-import { Link, Outlet, useParams } from "react-router-dom"
+import { Link, Outlet, useParams  } from "react-router-dom"
 import DetailsLayout from "../../components/DetailsLayout"
 import { useEffect, useState } from "react"
 
@@ -6,12 +6,12 @@ import { useEffect, useState } from "react"
 export const HostVansDetails = () => {
   const params = useParams();
 
-  const [currentCav, setCurrentCav] = useState(null);
+  const [currentVan, setCurrentVan] = useState(null);
 
   useEffect(() => {
     fetch(`/api/vans/${params.id}`)
     .then(res=> res.json())
-    .then(data => setCurrentCav(data.vans))   
+    .then(data => setCurrentVan(data.vans))   
   }, [])
 
   return (
@@ -29,13 +29,13 @@ export const HostVansDetails = () => {
       <div className="hostVanDetail-container">
 
         {
-          currentCav ? (
+          currentVan ? (
             <div className="hostVanDetail-header">
-            <img src={currentCav.imageUrl} alt={currentCav.name} />
+            <img src={currentVan.imageUrl} alt={currentVan.name} />
             <div className="hostVanDetail-text">
-              <i className={currentCav.type}>{currentCav.type}</i>
-              <h3>{currentCav.name}</h3>
-              <p>${currentCav.price}/<span>day</span></p>
+              <i className={currentVan.type}>{currentVan.type}</i>
+              <h3>{currentVan.name}</h3>
+              <p>${currentVan.price}/<span>day</span></p>
             </div>
   
           </div>
@@ -46,7 +46,7 @@ export const HostVansDetails = () => {
      
         <DetailsLayout />
         
-        <Outlet />
+        <Outlet context={{currentVan}} />
 
       </div>
 
