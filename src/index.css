@@ -370,6 +370,10 @@ footer p{
   border-radius: 5px;
 }
 
+.hostVans-card h3{
+  color: #161616;
+}
+
 .hostVans-card p{
   font-size: 1.1rem;
   font-weight: 600;
@@ -378,4 +382,83 @@ footer p{
 .hostVans-card span{
   color: #4D4D4D;
   font-weight: 500;
+}
+
+/* HOST VAN DETAIL SECTION  */
+
+.hostVanDetail-section{
+  padding: 2rem;
+}
+
+.hostVanDetail-section p{
+  text-decoration: underline;
+  color: #201F1D;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.hostVanDetail-section svg{
+  margin-right: 0.6rem;
+}
+
+.hostVanDetail-container{
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.hostVanDetail-header{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hostVanDetail-header img{
+  width: 160px;
+  border-radius: 5px;
+}
+
+
+.hostVanDetail-text i{
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  width: 70px;
+}
+
+.hostVanDetail-text h3{
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #161616;
+}
+
+.hostVanDetail-text p{
+  text-decoration: none;
+  font-weight: 700;
+  color: #161616;
+  cursor: default;
+}
+
+.hostVanDetail-text p span{
+  font-weight: 500;
+}
+
+.datails-links{
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.datails-links a{
+  text-decoration: none;
+  font-weight:500;
+  color: #4D4D4D;
+}
+
+.datails-links a:hover{
+  font-weight: 700;
+  color: #161616;
+  text-decoration: underline;
 }
