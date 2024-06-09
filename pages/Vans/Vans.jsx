@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link,  useSearchParams } from "react-router-dom"
+import { getVans } from "../../src/api";
+
 
 const Vans = () => {
 
@@ -7,13 +9,27 @@ const Vans = () => {
 
   const  [ searchParams , setSearchParams] = useSearchParams()
 
+  const [loading, setLoading] = useState(false);
+
   const typeFilter = searchParams.get("type")
 
-
+  
   useEffect(() => {
-      fetch("/api/vans")
-          .then(res => res.json())
-          .then(data => setVans(data.vans))
+    async function loadVans() {
+      setLoading(true)
+
+      try {
+        const data = await getVans()
+        setVans(data)
+        
+      } catch (error) {
+        console.log(error)
+      }
+
+      setLoading(false)
+    }
+  
+    loadVans()
   }, [])
 
   const filtersVans = typeFilter 
@@ -48,7 +64,10 @@ const Vans = () => {
       </div>
 
       <div className="cards-container">
-        {vansElement}
+        {
+          loading ? <h2>Loading...</h2> : vansElement
+        }
+        
       </div>
 
     </div>

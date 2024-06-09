@@ -1,16 +1,21 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom"
 
-
 const VanDetail = () => {
-  const params = useParams();
+  const { id } = useParams();
   const [van, setVan] = useState(null);
 
+
   useEffect(() => {
-    fetch(`/api/vans/${params.id}`)
+
+    fetch(`/api/vans/${id}`)
     .then(res=> res.json())
     .then(data => setVan(data.vans))   
+
   }, [])
+
+
+
 
   
   return (
