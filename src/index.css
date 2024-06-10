@@ -569,6 +569,7 @@ footer p{
   color: #fff;
   font-size: 1rem;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .login-container p{
@@ -578,4 +579,15 @@ footer p{
 
 .login-container p span{
   color: #FF8C38;
+}
+
+.login-form .disabledButton{
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.login-container .errorMessage{
+  color: #e6400e;
+  position: absolute;
+  top: 25%;
 }

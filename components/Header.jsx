@@ -10,6 +10,11 @@ const IconLogin = () => {
 }
 
 export const Header = () => {
+
+  function fakeLogOut() {
+    localStorage.removeItem("loggedin")
+  } 
+
   return (
     <header>
         <Link to="/" className="site-logo">#VANLIFE</Link>
@@ -20,6 +25,7 @@ export const Header = () => {
             <NavLink isActive={ ({isActive}) => { isActive ? className="active" : null } } to="/about">About</NavLink>
             <NavLink isActive={ ({isActive}) => { isActive ? className="active" : null } } to="/vans">Vans</NavLink> 
             <NavLink isActive={ ({isActive}) => { isActive ? className="active" : null } } to="/login">{IconLogin}</NavLink> 
+            <button onClick={fakeLogOut}>X</button>
         </div>
     </header>
   )
