@@ -366,7 +366,7 @@ footer p{
   background-color: #fff;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  margin-bottom: 1rem;
   border-radius: 6px;
 }
 
@@ -374,6 +374,7 @@ footer p{
   width: 66px;
   height: 66px;
   border-radius: 5px;
+  margin-right: 1rem;
 }
 
 .hostVans-card h3{
@@ -591,3 +592,110 @@ footer p{
   position: absolute;
   top: 25%;
 }
+
+/* Dashboard  */
+
+
+.host-dashboard-earnings{
+  background-color: #FFEAD0;
+  padding: 2rem;
+  position: relative;
+}
+
+.info h1{
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.info p{
+  color: #4D4D4D;
+  margin-bottom: 1rem;
+}
+
+.info span{
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.info h2{
+  font-size: 3rem;
+  color: #161616;
+  font-weight: 800;
+}
+
+.host-dashboard-earnings a{
+  color: #161616;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.host-dashboard-reviews{
+  padding: 2rem;
+  background-color: #FFDDB2;
+  display: flex;
+  align-items: center;
+}
+
+.host-dashboard-reviews h2{
+  color: #161616;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.star{
+  color: #ff8c38;
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+.host-dashboard-reviews{
+  position: relative;
+}
+
+.host-dashboard-reviews span{
+  color: #161616;
+  font-weight: 600;
+}
+
+.host-dashboard-reviews p{
+  color: #4D4D4D;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.host-dashboard-reviews a{
+  color: #161616;
+  position: absolute;
+  top: 40%;
+  right: 2rem;
+  font-weight: 500;
+  text-decoration: none; 
+}
+
+.host-dashboard-vans{
+  padding: 2rem;
+}
+
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.top h2{
+  color: #161616;
+  font-weight: 700;
+}
+
+.top a{
+  color: #161616;
+  top: 40%;
+  right: 2rem;
+  font-weight: 500;
+  text-decoration: none;  
+}
+
