@@ -699,3 +699,81 @@ footer p{
   text-decoration: none;  
 }
 
+/* HOST INCOME SECTION  */
+
+.host-income{
+  padding: 2rem;
+}
+
+.host-income h3{
+  margin-top: 2rem;
+}
+
+.transactions{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.transaction{
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transaction h4{
+  font-size: 2.25rem;
+  color: #161616;
+}
+
+.transaction p{
+  color: #4D4D4D;
+  font-size: 1.5rem;
+}
+
+/* HOST REVIEWS SECTION  */
+
+.host-reviews{
+  padding: 2rem;
+}
+
+.host-reviews .info{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.host-reviews img{
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 2rem;
+}
+
+.host-reviews h3{
+  font-size: 1.20rem;
+  margin-bottom: 1.25rem;
+}
+
+.review-star{
+  color: #ff8c38;
+  margin-top: 1rem;
+}
+
+.review .info{
+  margin-top: 1rem;
+}
+
+.review p{
+  margin-bottom: 1rem;
+  color: #161616;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.info .name{
+  color:#161616;
+  font-weight: 700;
+}
